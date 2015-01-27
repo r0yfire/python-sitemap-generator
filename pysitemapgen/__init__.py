@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-##     PySitemap - A simple Python module to create XML sitemaps with
+##     pysitemapgen - A simple Python module to create XML sitemaps with
 ##                 support for sitemap indexes for very large maps.
 ##
 ##     For more information about sitemap indexes see:
@@ -209,7 +209,7 @@ class Sitemap(object):
             fh.write("<sitemap>\n"
                      "<loc>%s%s</loc>\n"
                      "<lastmod>%s</lastmod>\n"
-                     "<sitemap>\n" %(
+                     "</sitemap>\n" %(
                          self.sitemap_url.decode('utf-8'),
                          sitemap.decode('utf-8'),
                          datetime.datetime.utcnow().strftime("%Y-%m-%d")

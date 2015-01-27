@@ -17,28 +17,28 @@ for x in range(1,150000):
 sm.write('sitemap')
 ```
 
-Results should like like this:
+You should get 4 files for the example above:
 
 ```
 sitemap.xml  sitemap1.xml  sitemap2.xml  sitemap3.xml
 ```
 
-Content of `sitemap.xml`:
+Contents of `sitemap.xml`:
 
 ```
 <?xml version='1.0' encoding='UTF-8'?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap>
-<loc>http://example.com/sitemap1.xml</loc>
-<lastmod>2015-01-26</lastmod>
-<sitemap>
-<sitemap>
-<loc>http://example.com/sitemap2.xml</loc>
-<lastmod>2015-01-26</lastmod>
-<sitemap>
-<sitemap>
-<loc>http://example.com/sitemap3.xml</loc>
-<lastmod>2015-01-26</lastmod>
-<sitemap>
+    <sitemap>
+        <loc>http://example.com/sitemap1.xml</loc>
+        <lastmod>2015-01-26</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://example.com/sitemap2.xml</loc>
+        <lastmod>2015-01-26</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://example.com/sitemap3.xml</loc>
+        <lastmod>2015-01-26</lastmod>
+    </sitemap>
 </sitemapindex>
 ```
