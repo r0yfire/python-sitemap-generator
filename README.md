@@ -1,5 +1,10 @@
 # python-sitemap-generator
-A simple Python module to create XML sitemaps with support for sitemap indexes for very large maps.
+A simple Python module to create XML sitemaps with support for sitemap index files.
+
+`pysitemapgen` will create appropriate sitemap index files (to group multiple sitemap files) for maps with more than 50,000 URLs.
+
+For more details about Sitemap index files, see:
++ http://www.sitemaps.org/protocol.html#index
 
 Example usage:
 
